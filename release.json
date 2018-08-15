@@ -1,0 +1,17 @@
+{
+  "nio/AzureIoTReceiveMessage": {
+    "language": "Python",
+    "url": "git://github.com/nio-blocks/azure_IoT.git",
+    "version": "1.0.0"
+  },
+  "nio/AzureIoTSendEvent": {
+    "language": "Python",
+    "url": "git://github.com/nio-blocks/azure_IoT.git",
+    "version": "1.0.0"
+  },
+  "nio/AzureIoTSendReportedState": {
+    "language": "Python",
+    "url": "git://github.com/nio-blocks/azure_IoT.git",
+    "version": "1.0.0"
+  }
+}
