@@ -73,8 +73,9 @@ class AzureIoTClient(object):
             try:
                 body = json.loads(body)
             except (json_decode_error, ValueError):
-                self._logger.exception("Couldn't parse body: {}".format(body))
-                return IoTHubMessageDispositionResult.REJECTED
+                # ignore if no json, pass it to callback as decoded body
+                pass
+
             try:
                 self.receive_message_callback(body, properties)
             except ValueError:

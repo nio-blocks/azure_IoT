@@ -15,6 +15,13 @@ class AzureIoTReceiveMessage(AzureIoTBase, GeneratorBlock):
         return {"receive_message_callback": self._handle_message}
 
     def _handle_message(self, body, properties):
+        """ Receives a message sent from Azure's cloud broker
+
+        Args:
+            body (dict or decoded body): Body comes as a dict if conversion
+                was successful otherwise comes as a decoded body
+            properties (dict): key-value properties as a dictionary
+        """
         self.notify_signals([Signal({"body": body,
                                      "properties": properties
                                      })])
