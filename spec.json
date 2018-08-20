@@ -1,0 +1,84 @@
+{
+  "nio/AzureIoTReceiveMessage": {
+    "version": "1.0.0",
+    "description": "Block to receive messages from Azure IoT's cloud broker.",
+    "categories": [
+      "Communication"
+    ],
+    "properties": {
+      "connection_string": {
+        "title": "Connection String",
+        "type": "StringType",
+        "description": "Device connection string.",
+        "default": ""
+      },
+      "message_timeout": {
+        "title": "Message Timeout",
+        "type": "IntType",
+        "description": "Maximum time in milliseconds until a message times out",
+        "default": 10000
+      },
+    },
+    "inputs": {},
+    "outputs": {
+      "default": "Messages received from Azure IoT's cloud broker"
+    },
+    "commands": {}
+  },
+  "nio/AzureIoTSendEvent": {
+    "version": "1.0.0",
+    "description": "Block to send events to Azure IoT's cloud broker.",
+    "categories": [
+      "Communication"
+    ],
+    "properties": {
+      "connection_string": {
+        "title": "Connection String",
+        "type": "StringType",
+        "description": "Device connection string.",
+        "default": ""
+      },
+      "message_timeout": {
+        "title": "Message Timeout",
+        "type": "IntType",
+        "description": "Maximum time in milliseconds until a message times out",
+        "default": 10000
+      },
+    },
+    "inputs": {
+      "default": {
+        "description": "Any list of signals."
+      }
+    },
+    "outputs": {},
+    "commands": {}
+  },
+  "nio/AzureIoTSendReportedState": {
+    "version": "1.0.0",
+    "description": "Block to send reported states to Azure IoT's cloud broker.",
+    "categories": [
+      "Communication"
+    ],
+    "properties": {
+      "connection_string": {
+        "title": "Connection String",
+        "type": "StringType",
+        "description": "Device connection string.",
+        "default": ""
+      },
+      "message_timeout": {
+        "title": "Message Timeout",
+        "type": "IntType",
+        "description": "Maximum time in milliseconds until a message times out",
+        "default": 10000
+      },
+    },
+    "inputs": {
+      "default": {
+        "description": "Any list of signals."
+      }
+    },
+    "outputs": {},
+    "commands": {}
+  },
+}
