@@ -14,7 +14,7 @@ def noop(*a, **k):
 
 # JSONDecodeError is only raised in python 3.5 and above
 try:
-    json_decode_error = json.JSONDecodeErrorsaer
+    json_decode_error = json.JSONDecodeError
 except (ImportError, AttributeError):
     json_decode_error = ValueError
 
