@@ -43,7 +43,7 @@
         "type": "IntType",
         "description": "Maximum time in milliseconds until a message times out",
         "default": 10000
-      },
+      }
     },
     "inputs": {
       "default": {
@@ -71,7 +71,7 @@
         "type": "IntType",
         "description": "Maximum time in milliseconds until a message times out",
         "default": 10000
-      },
+      }
     },
     "inputs": {
       "default": {
@@ -80,5 +80,5 @@
     },
     "outputs": {},
     "commands": {}
-  },
+  }
 }
